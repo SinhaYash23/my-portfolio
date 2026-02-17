@@ -1,6 +1,26 @@
 import React from "react";
 
 const Navbar = () => {
+
+  const menuList = [
+    {
+      name: "Home",
+      link: "#",
+    },
+    {
+      name: "About",
+      link: "#",
+    },
+    {
+      name: "Services",
+      link: "#",
+    },
+    {
+      name: "Contact",
+      link: "#",
+    },
+  ]
+
   return (
     <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,18 +31,11 @@ const Navbar = () => {
             </span>
           </div>
           <div className="md:flex space-x-8 font-medium font-bold text-gray-900">
-            <a href="#" className="hover:text-blue-700">
-              Home
-            </a>
-            <a href="#" className="hover:text-blue-700">
-              About
-            </a>
-            <a href="#" className="hover:text-blue-700">
-              Services
-            </a>
-            <a href="#" className="hover:text-blue-700">
-              Contact
-            </a>
+            {menuList.map((item, index)=>{
+              return(<a href={item.link} key={index} className="hover:text-blue-700">
+              {item.name}
+            </a>)
+            })}
           </div>
         </div>
       </div>
