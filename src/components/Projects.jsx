@@ -2,7 +2,7 @@ import React from 'react';
 
 const projects = [
   {
-    title: "Crop Prediction ML",
+    title: "Admin Panel Dashboard",
     image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=500&q=80",
     desc: "Built with Python & Flask using Random Forest to predict crop yields.",
     tech: ["Python", "Flask", "ML"]
